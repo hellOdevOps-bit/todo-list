@@ -19,10 +19,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.hello_dev0ps.todolist"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "b44c3fbb-b926-4293-8b02-1ffd03a461c5"
+      }
+    },
+    "owner": "hello_dev0ps"
   }
 }
