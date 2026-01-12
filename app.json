@@ -2,7 +2,7 @@
   "expo": {
     "name": "todo-list",
     "slug": "todo-list",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -16,10 +16,6 @@
       "supportsTablet": true
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
       "package": "com.hello_dev0ps.todolist"
     },
     "web": {
@@ -30,6 +26,9 @@
         "projectId": "b44c3fbb-b926-4293-8b02-1ffd03a461c5"
       }
     },
-    "owner": "hello_dev0ps"
+    "owner": "hello_dev0ps",
+    "plugins": [
+      "expo-asset"
+    ]
   }
 }
