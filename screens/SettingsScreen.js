@@ -157,8 +157,9 @@ export default function SettingsScreen() {
   };
 
   return (
+    <View style={{ flex: 1, backgroundColor: colors.background }}>
     <ScrollView 
-      style={{ flex: 1, backgroundColor: colors.background }}
+      style={{ flex: 1 }}
       contentContainerStyle={{ padding: 20, paddingTop: 60, paddingBottom: 60 }}
     >
       <Text style={{ color: colors.text, fontSize: 26, fontWeight: 'bold', marginBottom: 30, textAlign: 'center' }}>
@@ -234,5 +235,18 @@ export default function SettingsScreen() {
         </TouchableOpacity>
       </View>
     </ScrollView>
+    
+    {/* Texte développeur en bas à droite */}
+    <Text style={{
+      position: 'absolute',
+      bottom: 20,
+      right: 20,
+      color: colors.placeholder,
+      fontSize: 12,
+      fontStyle: 'italic',
+    }}>
+      developed by HelloDevOps
+    </Text>
+    </View>
   );
 }

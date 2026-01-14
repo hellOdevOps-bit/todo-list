@@ -140,7 +140,11 @@ export default function HomeScreen() {
     topBar: {
       position: 'absolute',
       top: 50,
+      left: 20,
       right: 20,
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+      alignItems: 'center',
       zIndex: 1,
     },
     checkmark: {
@@ -616,6 +620,9 @@ export default function HomeScreen() {
 
       {/* Top bar */}
       <View style={styles.topBar}>
+        <TouchableOpacity onPress={() => navigation.getParent()?.openDrawer()}>
+          <Ionicons name="menu" size={24} color={colors.text} />
+        </TouchableOpacity>
         <TouchableOpacity onPress={() => navigation.navigate('Paramètres')}>
           <Ionicons name="settings-outline" size={24} color="gray" />
         </TouchableOpacity>
